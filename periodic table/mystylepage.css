@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 5px 5px 5px 5px;
+    
+}
+h1 {
+    text-align: center;
+    color: rgb(11, 47, 211);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 3px 4px gray;
+    text-transform: uppercase;
+}
+table,tr ,td{
+    padding: 5px;
+    border: 1px solid orange;
+}
+td{
+    color: white;
+    padding: 8px;
+    
+}
+table{
+    background-color: aqua;
+    text-transform:capitalize;
+    text-align: center;
+    empty-cells: hide;
+    position: absolute;
+    top:2cm;
+    
+    width: 100%;
+    
+}
+.red {
+    background-color: rgba(138, 11, 11, 0.842);
+}
+.blue{
+    background-color: rgb(43, 43, 131);
+}
+.yellow {
+    background-color: rgba(231, 227, 14, 0.842);
+}
+.green{
+    background-color: rgb(12, 167, 12);
+}

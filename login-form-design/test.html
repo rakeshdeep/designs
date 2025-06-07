@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            /* background-color: antiquewhite; */
+        }
+        .wrapper{
+            width: 50%;
+            height: 100%;
+            background-image: linear-gradient(to right, lightblue, lightgreen);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+            transition: all 2s linear 0s;
+            border-top-right-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+        
+        .highlighted{
+            position: absolute;
+            transform: translateX(100%);
+            background-image: linear-gradient(to right, yellow, purple);
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 150px;
+            border-bottom-left-radius: 150px;
+            
+        }
+        @media only screen and (max-width:1000px){
+            .wrapper{
+                width: 100%;
+                height: 50%;
+                border-bottom-left-radius: 150px;
+                border-bottom-right-radius: 150px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+            }
+            .highlighted{
+                transform: translateX(0%);
+                transform: translateY(100%);
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 150px;
+                border-top-right-radius: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="wrapper" id="myElement">
+    <div  >click me</div>
+    <button onclick="toggleClass()"> Toggle Class</button>
+    </div>
+    </div>
+    <script>
+        function toggleClass(){
+            var element = document.getElementById("myElement");
+            element.classList.toggle("highlighted");
+        }
+    </script>
+</body>
+</html>

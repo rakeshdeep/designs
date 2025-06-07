@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+   overflow-x: hidden;
+   /* background-color: ; */
+   background-image: linear-gradient(to right, #00ffffb2, #ffc0cba1, #ffc0cbb9);
+
+}
+.header{
+    width: 100%;
+}
+.navbar{
+    border: 2px solid red;
+    background-color: #0b0b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px;
+}
+.search{
+    flex: 1;
+    text-align: center;
+}
+.search input{
+    padding: 10px;
+    margin: 0;
+    border: none;
+}
+.search [type="text"]{
+    width: 85%;
+    margin-right: -5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search [type="submit"]{
+    width: 7%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #ffa500;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navRight{
+    /* border: 1px solid white; */
+    /* padding: 0px 10px; */
+    font-size: 1.1rem;
+}
+.navRight a{
+    text-decoration: none;
+    margin-right: 10px;
+    border-left: 2px solid white;
+    padding: 0px 8px;
+    color: #ffffff;
+}
+.header> img{
+    position: absolute;
+    flex-shrink: 1;
+    top: 69px;
+    width:100%;
+    height: auto;
+    z-index: -1;
+}
+.wrapper{
+    position: relative;
+    top: 280px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+.items{
+    /* border: 2px solid darkcyan; */
+    width: 23%;
+    margin: 5px;
+    padding: 5px 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px 1px black;
+
+}
+
+.items>img{
+    width: 100%;
+    height: auto;
+    /* padding: 0px 5px; */
+}
+.items
+.items>*{
+    line-height: 2rem;
+}
+
+
+
+.foot{
+    position: relative;
+    top: 295px;
+    padding: 40px;
+    text-align: center;
+    background-color: #0b0b1b;
+}
+.foot .country-1{
+    border: none;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #1b1b3b;
+    color: #ffffff;
+}
+.foot a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.foot a:hover{
+    text-decoration: underline;
+}
+.foot a:active{
+    color: #3e5e5b;
+}
+
+.list-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.list-items ul{
+    list-style-type: none;
+    
+    line-height: 2rem;
+    text-transform: capitalize;
+}

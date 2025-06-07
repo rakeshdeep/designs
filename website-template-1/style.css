@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 5px 5px 5px;
+    background-color: rgba(80, 75, 75, 0.644);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headerNav {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    margin-top: 0;
+    background-color: orange;
+    padding: 30px;
+}
+
+.navbar a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+
+#search-1 {
+    border: none;
+    padding: 10px;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#button {
+    float: right;
+}
+
+#button .button-go {
+    background-color: rgb(138, 133, 133);
+    border: none;
+    border-radius: 0;
+    padding: 9px;
+
+    /* margin-bottom: 10px; */
+    transition: all 3s steps;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.fixed-button {
+
+    position: fixed;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    margin: 0 20px 20px 0;
+
+}
+
+.fixed-button>button {
+    border-radius: 50%;
+    border: none;
+    padding: 20px;
+    color: #ffffff;
+    background-color: crimson;
+    transition: all 3s ease;
+}
+
+.main {
+    background-color: rgb(5, 107, 93);
+    margin: 0;
+    margin-top: 20px;
+    border: 1px solid rgb(5, 107, 93);
+    width: 100%;
+    min-height: 10cm;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.main h1 {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.main p {
+    padding: 20px;
+    text-align: left;
+    display: table;
+}
+
+.img_1 {
+    float: right;
+}
+
+.two {
+    margin-top: 20px;
+    color: rgb(5, 107, 93);
+    font-size: 14px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section {
+    width: 300px;
+    background-color: #ffffffe3;
+    text-align: center;
+    box-shadow: 0 0 8px black;
+    margin: 10px;
+}
+
+.section:hover {
+    background-color: #ffffff;
+}
+
+.button {
+    border: none;
+    background-color: rgb(5, 107, 93);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(37, 155, 139);
+    margin-bottom: 10px;
+    transition: all 3s steps;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    background-color: rgb(37, 155, 139);
+}
+
+.image-area {
+    /* border: 1px solid #fff000; */
+    width: 100%;
+    min-height: 500px;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.box {
+    text-align: center;
+    width: 20%;
+    /* height: 300px; */
+    color: rgb(5, 107, 93);
+    background-color: orange;
+    box-shadow: 0 0 8px #000009;
+    z-index: -2;
+    margin: 2px;
+}
+
+.inner-box {
+    padding: 10px;
+    width: 100%;
+    /* height: 295px; */
+    position: relative;
+    top: 20px;
+    left: 29px;
+    background-color: white;
+    box-shadow: 0 0 8px #000011;
+    z-index: -1;
+}
+
+.footer a {
+
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.footer nav {
+    display: inline;
+    padding: 20px;
+    float: right;
+}
+
+.footer {
+    margin-bottom: 0;
+    background-color: orange;
+}
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+    padding-left: 30px;
+    margin: 0;
+    color: white;
+
+}
+
+nav a:hover {
+    color: #504f4f;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #808080;
+    cursor: pointer;
+}
+
+nav a:active {
+    color: red;
+}
+
+.burger {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    right: 10px;
+    width: 40px;
+    height: 20px;
+}
+
+.line {
+    width: 100%;
+    margin: 5px 0px;
+    background-color: #ffffff;
+    padding: 2px 0px;
+}

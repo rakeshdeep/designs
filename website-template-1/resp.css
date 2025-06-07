@@ -1,0 +1,86 @@
+@media only screen and (max-width:897px){
+    .headerNav{
+        position: relative;
+    }
+    .headerNav nav a{
+        padding: 10px;         
+        font-size: 16px;
+       
+    }
+    .main h1{
+        font-size: 25px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .main p{
+        padding: 10px;
+        text-align:left;
+        display: table;
+    }
+    .img_1{
+        width: 473px;
+    }
+    .two{
+        line-height: 1.2rem;
+    }
+    .section{
+        margin: 10px;
+    }
+    .image-area{
+        /* border: 2px solid rebeccapurple; */
+        line-height: 1.2rem;
+        
+    }
+}
+@media only screen and (max-width:701px){
+    .headerNav .navbar a{
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    #button{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbarresp{
+        display: block;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section{
+        width: 90%;
+    }
+    .image-area{
+        flex-direction: column;
+    }
+    .box{
+        width: 90%;
+    }
+    .inner-box{
+        top: 0px;
+        left: 0px;
+    }
+    .footer nav{
+        display: none;
+    }
+}

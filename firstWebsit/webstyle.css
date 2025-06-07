@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contener::after{
+    content: "";
+    clear: both;
+    display:table;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+.header{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-shadow: 2px 2px 5px red, 3px 3px 10px white;
+}
+.title nav{
+    background-color: rgb(163, 159, 159);
+    padding: 10px;
+}
+.title nav a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: white;
+    padding: 15px;
+}
+
+
+.title nav a:visited{ color:green;}
+.title nav a:hover{ color: red; text-decoration: underline;}
+.title nav a:active{ color: blue; }
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    padding: 10px;
+    margin-top: 7px;
+    background-color:rgba(94, 89, 89, 0.829) ;
+    color: white;
+}
+.menu li:hover{
+    background-color: rgb(94, 89, 89);
+    cursor: pointer;
+}
+.aside{
+    background-color:rgba(94, 89, 89, 0.829) ;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 0;
+    padding-bottom: 3cm;
+}
+.aside:hover{
+    background-color: rgb(94, 89, 89);
+}
+.aside h2:hover{
+    color: darksalmon;
+    cursor: pointer;
+}
+.foot{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* for mobiles */
+[class*="col-"]{
+    width: 100%;
+}
+
+/* for desktop */
+@media screen and (min-width:800px) {
+    .col-1{width: 25%;}
+    .col-2{width: 50%;}
+    
+}
