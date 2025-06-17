@@ -1,0 +1,32 @@
+.faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #303030;
+    background-color: #303030;
+}
+
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: 24px;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq-item.active .faq-question::after {
+    content: '×';
+}
+
+.faq-answer {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid black;
+    font-size: 20px;
+}
